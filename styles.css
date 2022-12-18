@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #e7dcdc;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+
+}
+
+i{
+    font-size: 2.4rem;
+
+}
+
+.footer{
+    padding-block: 5rem;
+    background-color: #151823;
+    color: #666873;
+}
+
+.footerContainer{
+    max-width: 116rem;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+
+.footerTop{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    row-gap: 2rem;
+}
+
+.footerTitle{
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.footerList{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.footerListItem{
+    list-style: none;
+
+}
+
+.footerListLink{
+    text-decoration: none;
+    color: inherit;
+    transition: color .25s;
+
+}
+
+.footerListLink:hover{
+    color: #fff;
+}
+
+.companyInfo{
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-right: 5rem;
+
+}
+
+.companyLogo{
+    color: #fff;
+
+}
+
+.companyInfo ul{
+flex-direction: row;
+
+}
+
+.copyright{
+    margin-top: auto;
+}
+
+@media screen and (min-width: 40em){
+    .companyInfo{
+        grid-column: span 2;
+
+    }
+}
+.heading1{
+    color: rgb(102, 40, 40);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.para1{
+    background-color: #a3ace1;
+    font-family: sans-serif;
+    border: 2px dotted rgb(13, 22, 1);
+    border-radius: 25px;
+    color: rgb(83, 55, 3);
+    padding: 5rem;
+}
+
+.card{
+    background-color: rgb(236, 207, 207);
+    
+    box-shadow: 2px .8rem 1rem gba(0, 0, 0 .025);
+    margin-left: 15px;
+}
+
+.cardPublication{
+    position: relative;
+    height: 20rem;
+    overflow: hidden;
+}
+
+.cardPublication img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s;
+}
+
+.card:hover .cardPublication img{
+    transform: scale(1.5);
+}
+
+.cardPublication>div {
+    background: linear-gradient(to right bottom,
+    rgba(255, 119, 48, .8), rgba(255, 185, 0, .8));
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgb(215, 85, 45);
+    position: absolute;
+    inset: 0;
+    padding: 1rem;
+}
+
+.cardPublication i{
+    margin-right: 1rem;
+}
+
+.cardPublication span{
+    display: block;
+}
+
+.cardAuthor{
+    margin-bottom: .5rem;
+}
+
+.cardInfo{
+    position: relative;
+    padding: 2rem 3rem;
+
+}
+
+.cardTitle{
+    font-size: 3rem;
+
+}
+
+.cardSubtile {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #a2a2a2;
+    margin-bottom: 1rem;
+}
+
+.cardCta span{
+    display: inherit;
+    transition: transform .5s;
+
+}
+
+.cardCta:hover span{
+transform: translate(.5rem);
+}
+
+@media screen and (min-width: 37.5rem){
+    .card{
+        display: grid;
+        grid-auto-flow: column;
+        max-width: 75rem;
+        border: 3px solid rgb(232, 185, 29);
+        border-radius: 15px;
+        padding: 8px;
+
+    }
+
+    .cardPublication {
+        width: 25rem;
+        height: initial;
+    }
+}
+
+
+
+h1{
+    margin-left: 550px;
+    color: rgb(4, 130, 168);;
+}
+h2{
+    color: rgb(4, 9, 1);
+}
+
+#services{
+    margin: 10px;
+    display: flex;   
+}
+#services .box{
+    padding: 115px;
+    border: 2px solid rgb(15, 2, 2);
+    border-radius: 45px;
+    padding: 34px;
+    margin: 3px 6px;
+    background-color: rgba(196, 253, 242, 0.444);
+}
+.headings1{
+    margin-left: 620px;
+    color: rgb(4, 130, 168);
+    
+}
+
+.box p{
+    margin: 30px;
+    padding: 15px;
+    color: rgb(12, 21, 12);
+    background-color: rgb(207, 200, 200);
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.form{
+    border: 3px solid rgb(182, 245, 182);
+    border-radius: 20px;
+    padding: 15px;
+    display: inline-block;
+    margin: 20px;
+
+}
+input{
+    background-color: #d3d8f3;
+}
+
+.name1{
+    margin: 5px;
+    padding: 2px;
+}
+
+.num1{
+    margin: 5px;
+    padding: 2px;
+}
+.email1{
+    margin: 5px;
+    padding: 2px;
+}
+
+.button1{
+    margin-left: 80px;
+    color: white;
+    background-color: #151823;
+}
+
+.button1:hover{
+    background-color: orange;
+    margin: 13px;
+    padding: 3px;
+}
+
+.headings2{
+    margin-top: 3px;
+    color: #666873;
+}
+
+.navbar{
+    display: flex;
+    margin: 5px;
+    color: white;
+    background-color: #151823;
+    border: #151823;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin: 3px;
+    border: 2px solid black;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.navbar ul li a:hover{
+    color: red;
+    background-color: #a2a2a2;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+
